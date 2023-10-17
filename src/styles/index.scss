@@ -1,0 +1,14 @@
+@import "reset";
+@import "variables/global";
+
+body {
+  color:#fff;
+  background: #000;
+}
+
+.app {
+  font-family: var(--font-family-main);
+  font-size: var(--font-m);
+  min-height: 100vh;
+  height: 100%;
+}

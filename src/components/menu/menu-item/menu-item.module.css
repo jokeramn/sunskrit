@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.infoHuman {
+    display: flex;
+    align-items: center;
+    max-width: 160px;
+}
+
+.infoHookah {
+    display: flex;
+    align-items: center;
+    max-width: 120px;
+}
+
+.countHookah {
+    width: 10px;
+    text-align: center;
+}
+
+.iconWrapper {
+    width: 80px;
+}
+
+.icon {
+    display: block;
+    margin: auto; /* Центрирует иконку по горизонтали */
+    fill: #fff;
+}
+
+.imgWrapper {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.img {
+    display: block;
+    width: 100%;
+}
+
+.countHuman {
+    width: 42px;
+    text-align: center;
+}
+
+.value {
+    width: 62px;
+    text-align: center;
+}
+
+
+
