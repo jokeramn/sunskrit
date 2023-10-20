@@ -14,6 +14,7 @@
       "@utils/*": ["utils/*"],
       "@icons/*": ["icons/*"],
       "@images/*": ["images/*"],
+      "@shared/*": ["shared/*"],
     },
     "allowJs": true,
     "skipLibCheck": true,

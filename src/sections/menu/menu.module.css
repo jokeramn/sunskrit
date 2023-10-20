@@ -1,9 +1,72 @@
 .root {
-    height: 100vh;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 50px;
+}
+
+.menu {
+    margin-bottom: 30px;
+}
+
+.menuWrapper {
+    margin-bottom: 50px;
 }
 
 .title{
+    font-size: 48px;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.subInfo {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.subTitle {
+    margin-bottom: 10px;
+    font-size: 20px;
+    /*color: #ffef00;*/
+    color: yellow;
+}
+
+.drinksWrapper:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.drinkWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.descTitle {
+    font-weight: 700;
+}
+
+.descText {
+    font-size: 12px;
+}
+
+.priceDrinkWrapper {
+    display: flex;
+}
+
+.volumeDrink {
+    letter-spacing: -1px;
+    margin-right: 15px;
 }

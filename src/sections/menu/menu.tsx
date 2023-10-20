@@ -1,50 +1,65 @@
 import styles from "./menu.module.css";
-import { MenuItem } from "components/menu/menu-item";
-import { ReactComponent as HumanIcon } from "icons/man.svg";
-import hookah from "images/shisha.png";
-import { MenuHookah } from "~/shared";
+import { MenuHookahItem } from "components/menu/menu-hookah-item";
+import { menuDrinks, menuHookah, menuTea } from "shared";
 
-const hookahMenu: MenuHookah[] = [
-  {
-    countHuman: 1,
-    icon: HumanIcon,
-    countHookah: 1,
-    image: hookah,
-    value: 1200,
-    id: 1,
-  },
-  {
-    countHuman: "2-4",
-    icon: HumanIcon,
-    countHookah: 1,
-    image: hookah,
-    value: 1400,
-    id: 2,
-  },
-  {
-    countHuman: "5-6",
-    icon: HumanIcon,
-    countHookah: 2,
-    image: hookah,
-    value: 2600,
-    id: 3,
-  },
-  {
-    countHuman: "7-8",
-    icon: HumanIcon,
-    countHookah: 3,
-    image: hookah,
-    value: 3800,
-    id: 4,
-  },
-];
-export const Menu = () => (
-  <div className={styles.root}>
-    <h1 className={styles.title}>Кальяны</h1>
-    <div>
-      {hookahMenu.map((hookahItem) => (
-        <MenuItem key={hookahItem.id} {...hookahItem} />
-      ))}
-    </div>
-  </div>
-);
+
+export const Menu = () => {
+    return (
+        <div className={styles.root}>
+            <div className={styles.container}>
+                <div className={styles.menu}>
+                    <h1 className={styles.title}>кальяны</h1>
+                    <div className={styles.menuWrapper}>
+                        {menuHookah.map((hookahItem) => (
+                            <MenuHookahItem key={hookahItem.id} {...hookahItem} />
+                        ))}
+                    </div>
+                    <div className={styles.info}>
+                        <div className={styles.subInfo}>
+                            Цена действует при
+                            единовременном заказе кальянов.
+                        </div>
+                        <div className={styles.subInfo}>
+                            Цена не меняется в зависимости от того, курит гость или нет.
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.menu}>
+                    <h1 className={styles.title}>чай</h1>
+                    {menuTea.map((tea) => (
+                        <div key={tea.id} className={styles.drinksWrapper}>
+                            <h4 className={styles.subTitle}>{tea.type}</h4>
+                            {tea.drinks.map((drink) => (
+                                <div className={styles.drinkWrapper}>
+                                    <span>{drink.name}</span>
+                                    <span>{drink.value}</span>
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+
+                <div className={styles.menu}>
+                    <h1 className={styles.title}>напитки</h1>
+                    {menuDrinks.map((coldDrink) => (
+                        <div key={coldDrink.id} className={styles.drinksWrapper}>
+                            <h4 className={styles.subTitle}>{coldDrink.type}</h4>
+                            {coldDrink.drinks.map((drink) => (
+                                <div className={styles.drinkWrapper}>
+                                    <div className={styles.description}>
+                                        <span className={styles.descTitle}>{drink.name}</span>
+                                        {!!drink?.description && <span className={styles.descText}>{drink.description}</span>}
+                                    </div>
+                                    <div className={styles.priceDrinkWrapper}>
+                                        {!!drink?.volume && <span className={styles.volumeDrink}>{drink.volume}</span>}
+                                        <span>{drink.value}</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    )
+};
