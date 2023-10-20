@@ -8,8 +8,14 @@ body {
 
 .app {
   font-family: var(--font-family-main);
-  font-size: var(--font-m);
+  font-size: var(--font-size-m);
   min-height: 100vh;
   height: 100%;
   font-weight: 300;
+}
+
+@media screen and (max-width: 380px)  {
+  .app {
+    font-size: var(--font-size-s);
+  }
 }
