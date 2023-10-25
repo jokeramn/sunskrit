@@ -1,40 +1,40 @@
 import { DrinksData } from "~/shared";
 
-export const menuDrinks: DrinksData[] = [
+export const menuColdDrinks: DrinksData[] = [
     {
-        type: 'холодные напитки',
-        id: 1,
+        type: 'газировки',
+        id: 7,
         drinks: [
             {
                 name: "Кола/кола зеро",
-                value: 250,
+                value: 200,
                 volume: '0.33 л',
             },
             {
                 name: "Апельсин",
-                value: 250,
+                value: 200,
                 volume: '0.33 л',
             },
             {
                 name: "Лимон-лайм",
-                value: 250,
+                value: 200,
                 volume: '0.33 л',
             },
             {
                 name: "Манго-маракуйя",
-                value: 250,
+                value: 200,
                 volume: '0.33 л',
             },
             {
                 name: "Red Bull/Red Bull zero",
-                value: 300,
-                volume: '0.33 л',
+                value: 250,
+                volume: '0.25 л',
             },
         ]
     },
     {
         type: 'пиво',
-        id: 2,
+        id: 8,
         drinks: [
             {
                 name: "Guinness",
@@ -67,7 +67,7 @@ export const menuDrinks: DrinksData[] = [
                 volume: '0.5 л',
             },
             {
-                name: "Double Decker",
+                name: "Double Decker ALE",
                 value: 350,
                 volume: '0.45 л',
             },
@@ -78,52 +78,52 @@ export const menuDrinks: DrinksData[] = [
             },
             {
                 name: "Amstel б/а",
-                value: 250,
+                value: 200,
                 volume: '0.33 л',
             },
         ]
     },
     {
         type: 'сидр royal',
-        id: 3,
+        id: 9,
         drinks: [
             {
-                name: "Demi-Sec",
+                name: "Яблоко",
                 value: 350,
                 volume: '0.33 л',
             },
             {
-                name: "Cherry",
+                name: "Вишня",
                 value: 350,
                 volume: '0.33 л',
             },
             {
-                name: "Pear",
+                name: "Груша",
                 value: 350,
                 volume: '0.33 л',
             },
             {
-                name: "Plum",
+                name: "Слива",
                 value: 350,
                 volume: '0.33 л',
             },
             {
-                name: "Black Currant",
+                name: "Черная смородина",
                 value: 350,
                 volume: '0.33 л',
             },
             {
-                name: "Apricot",
+                name: "Абрикос",
                 value: 350,
                 volume: '0.33 л',
             },
             {
-                name: "Cranberry",
+                name: "Клюква",
                 value: 350,
                 volume: '0.33 л',
             },
             {
-                name: "Strawberry",
+                name: "Клубника",
                 value: 350,
                 volume: '0.33 л',
             },
@@ -131,7 +131,7 @@ export const menuDrinks: DrinksData[] = [
     },
     {
         type: 'лимонады',
-        id: 4,
+        id: 10,
         drinks: [
             {
                 name: "Пало санто банан",
@@ -168,6 +168,12 @@ export const menuDrinks: DrinksData[] = [
                 value: 350,
                 volume: '0.4 л',
                 description: "/тропический, сладкий/",
+            },
+            {
+                name: "Бамбук юдзу",
+                value: 350,
+                volume: '0.4 л',
+                description: "/цитрусовый, тропический, кислый/",
             },
             {
                 name: "Персик молочный улун",

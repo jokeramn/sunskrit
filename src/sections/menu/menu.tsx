@@ -1,6 +1,6 @@
 import styles from "./menu.module.css";
 import { MenuHookahItem } from "components/menu/menu-hookah-item";
-import { menuDrinks, menuHookah, menuTea } from "shared";
+import { menuColdDrinks, menuTea, menuHookah } from "shared";
 
 
 export const Menu = () => {
@@ -31,17 +31,20 @@ export const Menu = () => {
                             <h4 className={styles.subTitle}>{tea.type}</h4>
                             {tea.drinks.map((drink) => (
                                 <div className={styles.drinkWrapper}>
-                                    <span>{drink.name}</span>
-                                    <span>{drink.value}</span>
+                                    <div className={styles.description}>
+                                        <span className={styles.descTitle}>{drink.name}</span>
+                                        {!!drink?.description && <span className={styles.descText}>{drink.description}</span>}
+                                    </div>
+                                    <div className={styles.priceDrinkWrapper}>
+                                        {!!drink?.volume && <span className={styles.volumeDrink}>{drink.volume}</span>}
+                                        <span>{drink.value}</span>
+                                    </div>
                                 </div>
                             ))}
                         </div>
                     ))}
-                </div>
-
-                <div className={styles.menu}>
                     <h1 className={styles.title}>напитки</h1>
-                    {menuDrinks.map((coldDrink) => (
+                    {menuColdDrinks.map((coldDrink) => (
                         <div key={coldDrink.id} className={styles.drinksWrapper}>
                             <h4 className={styles.subTitle}>{coldDrink.type}</h4>
                             {coldDrink.drinks.map((drink) => (

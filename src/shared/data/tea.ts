@@ -86,7 +86,7 @@ export const menuTea: DrinksData[] = [
         ]
     },
     {
-        type: 'травянистый',
+        type: 'травяной',
         id: 5,
         drinks: [
             {
@@ -120,6 +120,6 @@ export const menuTea: DrinksData[] = [
                 value: 550,
             },
         ],
-    }
+    },
 ];
 
