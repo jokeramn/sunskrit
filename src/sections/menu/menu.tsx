@@ -37,7 +37,7 @@ export const Menu = () => {
                                     </div>
                                     <div className={styles.priceDrinkWrapper}>
                                         {!!drink?.volume && <span className={styles.volumeDrink}>{drink.volume}</span>}
-                                        <span>{drink.value}</span>
+                                        <span className={styles.price}>{drink.value}</span>
                                     </div>
                                 </div>
                             ))}
@@ -55,7 +55,7 @@ export const Menu = () => {
                                     </div>
                                     <div className={styles.priceDrinkWrapper}>
                                         {!!drink?.volume && <span className={styles.volumeDrink}>{drink.volume}</span>}
-                                        <span>{drink.value}</span>
+                                        <span className={styles.price}>{drink.value}</span>
                                     </div>
                                 </div>
                             ))}
