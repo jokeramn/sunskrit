@@ -55,43 +55,127 @@ export const menuColdDrinks: DrinksData[] = [
                 name: "Guinness",
                 value: 400,
                 volume: '0.44 л',
-                description: 'Темное фильтрованное 4.2%',
+                description: 'Темное фильтрованное, 4.2%',
             },
             {
                 name: "Leffe Blonde",
                 value: 400,
                 volume: '0.33 л',
-                description: 'Фильтрованное светлое 6.6%',
+                description: 'Фильтрованное светлое, 6.6%',
             },
             {
                 name: "Leffe Brune",
                 value: 400,
                 volume: '0.33 л',
-                description: 'Фильтрованное темное 6.5%',
+                description: 'Фильтрованное темное, 6.5%',
             },
             {
                 name: "Corona Extra",
                 value: 350,
                 volume: '0.35 л',
-                description: 'светлое фильтрованное 4.5%',
+                description: 'светлое фильтрованное, 4.5%',
             },
             {
                 name: "White Moon",
                 value: 350,
                 volume: '0.5 л',
-                description: "Сливочный стаут нефильтрованный 5.5%",
+                description: "Сливочный стаут нефильтрованный, 5.5%",
             },
             {
                 name: "Love Memories",
                 value: 350,
                 volume: '0.5 л',
-                description: 'Клубничный эль нефильтрованный 4%',
+                description: 'Клубничный эль нефильтрованный, 4%',
             },
             {
                 name: "Amstel б/а",
                 value: 200,
                 volume: '0.33 л',
                 description: 'Светлое безалкогольное'
+            },
+            {
+                name: "Рука б*га",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Эль светлое нефильтрованное, 4,5%'
+            },
+            {
+                name: "Млко",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Стаут нефильтрованное, 4,8%'
+            },
+            {
+                name: "Первый авиатор",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Ипа светлое нефильтрованное, 4,4%'
+            },
+            {
+                name: "Сеттер",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Эль темное нефильтрованное, 4,5%'
+            },
+            {
+                name: "Фибоначи",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Двойной ипа светлое нефильтрованное, 8,0%'
+            },
+            {
+                name: "Эвридей",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Апа светлое нефильтрованное, 5,2%'
+            },
+            {
+                name: "Мала страна",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Лагер светлое нефильтрованное, 4,8%'
+            },
+            {
+                name: "Ин блум",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Ипа нефильтрованное, 6,5%'
+            },
+            {
+                name: "Джели белли",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Фрут эль нефильтрованное, 4,5%'
+            },
+            {
+                name: "Хмтм киви банан",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Смузи нефильтрованное, 6,0%'
+            },
+            {
+                name: "Супер кул",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Саур нефильтрованное, 5,0%'
+            },
+            {
+                name: "Нуар",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Стаут нефильтрованное, 4,5%'
+            },
+            {
+                name: "Страдаст",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Ипа нефильтрованное, 5,0%'
+            },
+            {
+                name: "Рубин",
+                value: 400,
+                volume: '0.5 л',
+                description: 'Фруктовый эль нефильтрованное, 6.9%'
             },
         ]
     },
