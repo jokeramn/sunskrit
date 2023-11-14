@@ -1,20 +1,14 @@
 .root {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .container {
     padding: 30px;
 }
 
-.menu {
-    margin-bottom: 30px;
-}
-
 .menuWrapper {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .title{
@@ -25,7 +19,7 @@
 }
 
 .info {
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .subInfo {
@@ -46,8 +40,15 @@
 
 .drinkWrapper {
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.descriptionInfoWrapper {
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 150px;
 }
 
 .description {
@@ -61,7 +62,17 @@
 
 .descText {
     font-size: 12px;
-    max-width: 160px;
+    max-width: 190px;
+}
+
+.addColorDesc {
+    color: #ec9f50;
+}
+
+.infoIcon {
+    width: 20px;
+    height: 20px;
+    fill: #ec9f50;
 }
 
 .priceDrinkWrapper {

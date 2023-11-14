@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c6b35a-f847-458a-9d54-5969bafaaba3" name="Changes" comment="added menu drinks">
+    <list default="true" id="46c6b35a-f847-458a-9d54-5969bafaaba3" name="Changes" comment="fixed menu price">
+      <change afterPath="$PROJECT_DIR$/src/images/like.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/button/button.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/button/button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/button/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/modal/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/modal/modal.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/modal/modal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/menu-hookah-item/menu-hookah-item.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu-hookah-item/menu-hookah-item.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/about/about.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/about/about.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/about/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/about/about.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/menu/menu.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/menu/menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/menu/menu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/data/coldDrinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/data/coldDrinks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/data/tea.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/data/tea.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/types/drinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/types/drinks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +52,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/astonuser/projects/sunskrit/src/images&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
@@ -45,6 +63,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/shared/data" />
     </key>
@@ -60,7 +81,13 @@
       <workItem from="1697637510300" duration="3467000" />
       <workItem from="1697723401107" duration="26566000" />
       <workItem from="1698255344140" duration="2345000" />
-      <workItem from="1698671439598" duration="4244000" />
+      <workItem from="1698671439598" duration="35640000" />
+      <workItem from="1699011569925" duration="598000" />
+      <workItem from="1699452672822" duration="8756000" />
+      <workItem from="1699877801228" duration="3068000" />
+      <workItem from="1699886614216" duration="12606000" />
+      <workItem from="1699972894445" duration="765000" />
+      <workItem from="1699981290162" duration="428000" />
     </task>
     <task id="LOCAL-00001" summary="added menu drinks">
       <option name="closed" value="true" />
@@ -78,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698257502171</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed menu price">
+      <option name="closed" value="true" />
+      <created>1698678216695</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698678216695</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +122,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start project, added menu hookah" />
     <MESSAGE value="added menu drinks" />
-    <option name="LAST_COMMIT_MESSAGE" value="added menu drinks" />
+    <MESSAGE value="fixed menu price" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed menu price" />
   </component>
 </project>
