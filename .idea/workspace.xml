@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c6b35a-f847-458a-9d54-5969bafaaba3" name="Changes" comment="fixed tea menu, added btn info, added milkshakes, fresh juices">
+    <list default="true" id="46c6b35a-f847-458a-9d54-5969bafaaba3" name="Changes" comment="added new alco beverage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/about/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/about/about.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/menu/menu.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/menu/menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/menu/menu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/data/coldDrinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/data/coldDrinks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/types/drinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/types/drinks.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +72,7 @@
       <workItem from="1699877801228" duration="3068000" />
       <workItem from="1699886614216" duration="12606000" />
       <workItem from="1699972894445" duration="765000" />
-      <workItem from="1699981290162" duration="1939000" />
+      <workItem from="1699981290162" duration="7856000" />
     </task>
     <task id="LOCAL-00001" summary="added menu drinks">
       <option name="closed" value="true" />
@@ -110,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699981840397</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added new alco beverage">
+      <option name="closed" value="true" />
+      <created>1699983440342</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699983440342</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +133,7 @@
     <MESSAGE value="added menu drinks" />
     <MESSAGE value="fixed menu price" />
     <MESSAGE value="fixed tea menu, added btn info, added milkshakes, fresh juices" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed tea menu, added btn info, added milkshakes, fresh juices" />
+    <MESSAGE value="added new alco beverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new alco beverage" />
   </component>
 </project>

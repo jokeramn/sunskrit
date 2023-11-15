@@ -13,7 +13,7 @@ export type DrinksData = {
 }
 
 export type InfoDrinkData =  {
-    structure: string;
-    brewTime: string;
+    structure?: string;
+    brewTime?: string;
     aroma?: string;
 }

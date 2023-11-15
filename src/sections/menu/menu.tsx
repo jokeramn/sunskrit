@@ -4,7 +4,6 @@ import { MenuHookahItem } from "components/menu/menu-hookah-item";
 import { Drinks, InfoDrinkData, menuColdDrinks, menuHookah, menuTea } from "shared";
 import cx from "classnames";
 import { ReactComponent as InfoIcon } from "icons/info.svg";
-import { createPortal } from "react-dom";
 import { Modal } from "shared/ui/modal";
 
 export type InfoDrinkDataT = InfoDrinkData & {
@@ -15,7 +14,7 @@ export const Menu = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
     const [openModal, setOpenModal] = useState(false);
     const [infoDrink, setInfoDrink] = useState<InfoDrinkDataT>(null);
 
-    const handleOpenModal = (drink?: Drinks) => {
+    const handleOpenModalTea = (drink?: Drinks) => {
         setOpenModal((prevState) => !prevState)
 
         if (drink?.info) {
@@ -58,16 +57,16 @@ export const Menu = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
                             <h4 className={styles.subTitle}>{tea.type}</h4>
                             {tea.drinks.map((drink) => (
                                 <div className={styles.drinkWrapper}>
-                                    <div className={styles.descriptionInfoWrapper}>
-                                        <div className={styles.description}>
+                                    <div className={styles.description}>
+                                        <div className={styles.descriptionInfoWrapper}>
                                             <span className={styles.descTitle}>{drink.name}</span>
-                                            {!!drink?.description &&
-                                                <span className={styles.descText}>{drink.description}</span>}
+                                            <button type="button"
+                                                    onClick={() => handleOpenModalTea(drink)}>
+                                                <InfoIcon className={styles.infoIcon}/>
+                                            </button>
                                         </div>
-                                        <button type="button"
-                                                onClick={() => handleOpenModal(drink)}>
-                                            <InfoIcon className={styles.infoIcon}/>
-                                        </button>
+                                        {!!drink?.description &&
+                                            <span className={styles.descText}>{drink.description}</span>}
                                     </div>
                                     <div className={styles.priceDrinkWrapper}>
                                         {!!drink?.volume && <span className={styles.volumeDrink}>{drink.volume}</span>}
@@ -100,7 +99,7 @@ export const Menu = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
                     ))}
                 </div>
             </div>
-            {createPortal(<Modal handleOpenModal={handleOpenModal} isOpen={openModal}>
+            <Modal handleOpenModal={handleOpenModalTea} isOpen={openModal}>
                 <div>
                     <h1 style={{
                         textAlign: 'center',
@@ -112,7 +111,7 @@ export const Menu = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
                             color: '#ec9f50',
                             fontWeight: "bold",
                         }}>Состав: </span>
-                        <span>{infoDrink?.structure.toLowerCase().replace(/\./g, '')}</span>
+                        <span>{infoDrink?.structure?.toLowerCase().replace(/\./g, '')}</span>
                     </div>
                     {
                         infoDrink?.aroma && (
@@ -121,7 +120,7 @@ export const Menu = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
                                     color: '#ec9f50',
                                     fontWeight: "bold",
                                 }}>Аромат: </span>
-                                <span>{infoDrink?.aroma.toLowerCase().replace(/\./g, '')}</span>
+                                <span>{infoDrink?.aroma?.toLowerCase().replace(/\./g, '')}</span>
                             </div>
                         )
                     }
@@ -133,7 +132,7 @@ export const Menu = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
                         <span>{infoDrink?.brewTime}</span>
                     </div>
                 </div>
-            </Modal>, document.body)}
+            </Modal>
         </div>
     )
 };

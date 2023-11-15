@@ -47,8 +47,8 @@
 .descriptionInfoWrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 150px;
+    justify-content: space-between;
 }
 
 .description {
@@ -73,6 +73,7 @@
     width: 20px;
     height: 20px;
     fill: #ec9f50;
+    display: block;
 }
 
 .priceDrinkWrapper {

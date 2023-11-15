@@ -38,7 +38,7 @@ export const About = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
                 </div>
                 <div className={styles.btnWrapper}>
                     <Button className={styles.btn} onClick={handleScrollToMenu}>
-                        menu
+                        меню
                     </Button>
                     <Button onClick={() => redirectToLink(links.referral)} className={styles.btn}>
                         карта лояльности
