@@ -1,18 +1,13 @@
-import { RefObject } from "react";
 import styles from "./about.module.css";
 import logo from 'images/logo.png'
 import like from 'images/like.png'
 import { Button } from "shared/ui/button";
+import PdfFood from 'pdf/food.pdf';
+import { useNavigate } from "react-router-dom";
 
-export const About = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
-
-    const handleScrollToMenu = () => {
-        if (menuRef.current) {
-            menuRef.current.scrollIntoView({behavior: 'smooth'});
-        }
-    };
-
+export const About = () => {
     const redirectToLink = (link: string) => window.open(link, "_blank");
+    const navigate = useNavigate();
 
     const links = {
         reviews: 'https://yandex.ru/maps/org/sunskrit_lounge/1793286096/reviews/?l=sat%2Cskl&ll=30.359633%2C59.947194&mode=search&sctx=ZAAAAAgBEAAaKAoSCT27fOvDej5AEbHc0mpI7k1AEhIJ2o0%2B5gMCbT8R5xw8E5okZj8iBgABAgMEBSgKOABAwJ4BSAFqAnJ1nQHNzEw9oAEAqAEAvQGinEUjwgEF0L%2BN1wbqAQDyAQD4AQCCAhDQodCw0L3RgdC60YDQuNGCigIAkgIAmgIKdG91Y2gtbWFwcw%3D%3D&sll=30.359633%2C59.947194&sspn=0.014162%2C0.010786&tab=reviews&text=%D0%A1%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82&z=15',
@@ -37,7 +32,7 @@ export const About = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
                     </div>
                 </div>
                 <div className={styles.btnWrapper}>
-                    <Button className={styles.btn} onClick={handleScrollToMenu}>
+                    <Button className={styles.btn} onClick={()=> navigate("/menu")}>
                         меню
                     </Button>
                     <Button onClick={() => redirectToLink(links.referral)} className={styles.btn}>
@@ -45,6 +40,9 @@ export const About = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
                     </Button>
                     <Button onClick={() => redirectToLink(links.reviews)} className={styles.btn}>
                         отзывы
+                    </Button>
+                    <Button onClick={()=> navigate("/food")} className={styles.btn}>
+                        eда
                     </Button>
                 </div>
                 <div className={styles.advantages}>

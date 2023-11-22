@@ -15,6 +15,7 @@
       "@icons/*": ["icons/*"],
       "@images/*": ["images/*"],
       "@shared/*": ["shared/*"],
+      "@pdf/*": ["pdf/*"],
     },
     "allowJs": true,
     "skipLibCheck": true,

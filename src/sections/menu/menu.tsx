@@ -1,4 +1,4 @@
-import React, { RefObject, useState } from "react";
+import React, { useState } from "react";
 import styles from "./menu.module.css";
 import { MenuHookahItem } from "components/menu/menu-hookah-item";
 import { Drinks, InfoDrinkData, menuColdDrinks, menuHookah, menuTea } from "shared";
@@ -10,19 +10,18 @@ export type InfoDrinkDataT = InfoDrinkData & {
     name: string;
 } | null;
 
-export const Menu = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
+export const Menu = () => {
     const [openModal, setOpenModal] = useState(false);
     const [infoDrink, setInfoDrink] = useState<InfoDrinkDataT>(null);
 
     const handleOpenModalTea = (drink?: Drinks) => {
-        setOpenModal((prevState) => !prevState)
+        setOpenModal((prevState) => !prevState);
 
         if (drink?.info) {
-            const drinkAndName = {
+            const drinkAndName: InfoDrinkDataT = {
                 name: drink.name,
                 ...drink.info
-            } as InfoDrinkDataT;
-
+            };
             setInfoDrink(drinkAndName)
         } else {
             setInfoDrink(null)
@@ -31,7 +30,7 @@ export const Menu = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
 
 
     return (
-        <div className={styles.root} ref={menuRef}>
+        <div className={styles.root}>
             <div className={styles.container}>
                 <div className={styles.menu}>
                     <h1 className={styles.title}>кальяны</h1>
@@ -56,7 +55,7 @@ export const Menu = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
                         <div key={tea.id} className={styles.drinksWrapper}>
                             <h4 className={styles.subTitle}>{tea.type}</h4>
                             {tea.drinks.map((drink) => (
-                                <div className={styles.drinkWrapper}>
+                                <div className={styles.drinkWrapper} key={drink.name}>
                                     <div className={styles.description}>
                                         <div className={styles.descriptionInfoWrapper}>
                                             <span className={styles.descTitle}>{drink.name}</span>
@@ -82,7 +81,7 @@ export const Menu = ({menuRef}: { menuRef: RefObject<HTMLDivElement> }) => {
                         <div key={coldDrink.id} className={styles.drinksWrapper}>
                             <h4 className={styles.subTitle}>{coldDrink.type}</h4>
                             {coldDrink.drinks.map((drink) => (
-                                <div className={styles.drinkWrapper}>
+                                <div className={styles.drinkWrapper} key={drink.name}>
                                     <div className={styles.description}>
                                         <span
                                             className={cx(styles.descTitle, {[styles.addColorDesc]: drink.description})}>{drink.name}</span>
