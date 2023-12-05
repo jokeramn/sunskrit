@@ -9,7 +9,7 @@ export interface PdfViewerProps {
 }
 export const PdfViewer:FC<PdfViewerProps> = ({file}) => {
     const [numPages, setNumPages] = useState<number | null>(null);
-    const widthPdfPage = window.innerWidth - window.innerWidth * 0.15;
+    const widthPdfPage = window.innerWidth;
 
     const onDocumentLoadSuccess: OnDocumentLoadSuccess = (document) => {
         setNumPages(document.numPages);

@@ -1,19 +1,23 @@
-import { Navigate, Route, Routes } from "react-router-dom";
-import { useRef } from "react";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import "./styles/index.scss";
+import { Welcome } from "./sections/welcome";
 import { Menu } from "./sections/menu";
-import { About } from "./sections/about";
-import { Food } from "./sections/food";
+import { useEffect } from "react";
 
 function App() {
-    const menuRef = useRef(null);
+    const {pathname} = useLocation();
+    useEffect(() => {
+
+        setTimeout(()=> {
+            window.scrollTo(0,0);
+        }, 0)
+    }, [pathname]);
 
     return (
         <div className="app">
             <Routes>
-                <Route path="/" element={<About/>}/>
-                <Route path="/menu" element={<Menu />}/>
-                <Route path="/food" element={<Food/>}/>
+                <Route path="/" element={<Welcome/>}/>
+                <Route path="menu" element={<Menu/>}/>
                 <Route path="*" element={<Navigate to="/"/>}/>
             </Routes>
         </div>

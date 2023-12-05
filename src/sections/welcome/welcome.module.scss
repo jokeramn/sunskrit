@@ -1,0 +1,75 @@
+.root {
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    background: url("../../images/bg_main.png") no-repeat center top;
+    background-size: cover;
+}
+
+.wrapperImg {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapperImg > img {
+    display: block;
+}
+
+.workInfo {
+    margin-top: 75px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 8px;
+    font-weight: normal;
+    height: 50px;
+}
+
+.btnWrapper {
+    margin-top: 75px;
+}
+
+.btn {
+    width: 100%;
+}
+
+.title {
+    margin-top: 115px;
+}
+
+.bonusWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+    max-width: 210px;
+    align-items: flex-start;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 95px;
+    font-weight: 500;
+}
+
+.btnBonusWrapper {
+    margin: 140px 0 112px;
+}
+
+.phoneWrapperImg {
+    position: absolute;
+    bottom: 220px;
+    right: -20%;
+
+    & > img {
+        display: block;
+    }
+}

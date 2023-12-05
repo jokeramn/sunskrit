@@ -2,8 +2,9 @@
 @import "variables/global";
 
 body {
-  color:#fff;
-  background: #1c1a1a;
+  color: var(--color-primary);
+  background: var(--bg-color);
+  height: 100dvh;
 }
 
 .app {
