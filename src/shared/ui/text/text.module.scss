@@ -1,3 +1,15 @@
 .text {
+  white-space: pre-line;
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.secondary {
+  color: var(--color-secondary);
+}
+
+.additional {
   color: var(--color-additional);
 }

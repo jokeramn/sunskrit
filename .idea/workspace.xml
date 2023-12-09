@@ -4,57 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c6b35a-f847-458a-9d54-5969bafaaba3" name="Changes" comment="added routing">
-      <change afterPath="$PROJECT_DIR$/src/icons/inst.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/telega.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/vk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/bg_main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/phone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pdf/menu.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sections/welcome/welcome.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/text/text.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/text/text.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/title/title.tsx" afterDir="false" />
+    <list default="true" id="46c6b35a-f847-458a-9d54-5969bafaaba3" name="Changes" comment="redesign">
+      <change afterPath="$PROJECT_DIR$/src/sections/contacts/contacts.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu-hookah-item/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu-hookah-item/menu-hookah-item.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu-hookah-item/menu-hookah-item.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu-hookah-item/type.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/title/title.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pdf-viewer/pdf-viewer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pdf-viewer/pdf-viewer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pdf/food.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/about/about.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/about/about.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/about/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/food/food.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/menu/menu.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/food/food.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/food/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/menu/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/menu/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/menu/menu.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/menu/menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/menu/menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/welcome/welcome.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pdf/menu.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/pdf/menu.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/contacts/contacts.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/contacts/contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/contacts/contacts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/welcome/welcome.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome/welcome.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/welcome/welcome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome/welcome.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/data/coldDrinks.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/data/hookah.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/data/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/data/tea.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/types/drinks.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/types/hookah.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/types/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/button/button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/button/button.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/button/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/modal/modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/modal/modal.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/text/text.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/text/text.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/text/text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/text/text.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +46,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "ts.external.directory.path": "/Users/astonuser/projects/sunskrit/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
@@ -131,7 +92,11 @@
       <workItem from="1701692105941" duration="4340000" />
       <workItem from="1701697592445" duration="604000" />
       <workItem from="1701725172476" duration="1108000" />
-      <workItem from="1701803779550" duration="12417000" />
+      <workItem from="1701803779550" duration="13687000" />
+      <workItem from="1701865552339" duration="97000" />
+      <workItem from="1701865802862" duration="3535000" />
+      <workItem from="1701949564400" duration="126000" />
+      <workItem from="1702072409324" duration="2350000" />
     </task>
     <task id="LOCAL-00001" summary="added menu drinks">
       <option name="closed" value="true" />
@@ -197,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700667647156</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="redesign">
+      <option name="closed" value="true" />
+      <created>1701817273834</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701817273834</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +184,7 @@
     <MESSAGE value="added new alco beverage" />
     <MESSAGE value="fixed styles menu" />
     <MESSAGE value="added routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="added routing" />
+    <MESSAGE value="redesign" />
+    <option name="LAST_COMMIT_MESSAGE" value="redesign" />
   </component>
 </project>

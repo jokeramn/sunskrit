@@ -1,8 +1,9 @@
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import "./styles/index.scss";
-import { Welcome } from "./sections/welcome";
-import { Menu } from "./sections/menu";
+import { Welcome } from "sections/welcome";
+import { Menu } from "sections/menu";
 import { useEffect } from "react";
+import { Contacts } from "sections/contacts";
 
 function App() {
     const {pathname} = useLocation();

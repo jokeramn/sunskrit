@@ -3,6 +3,7 @@ import styles from "./welcome.module.scss";
 import logo from 'images/logo.png'
 import phone from 'images/phone.png'
 import { Button, Text, Title } from "shared";
+import { Contacts } from "sections/contacts";
 
 export const Welcome = () => {
     const redirectToLink = (link: string) => window.open(link, "_blank");
@@ -33,30 +34,34 @@ export const Welcome = () => {
                         Пн-Вс 12:00 - 01:00
                     </span>
                 </div>
-                <Title level={1} className={styles.title}>
-                    бонусная карта
-                </Title>
                 <div className={styles.bonusWrapper}>
+                    <Title level={1}>
+                        бонусная карта
+                    </Title>
+                    <div className={styles.bonusTextInfo}>
                     <span>
-                        <Text>400</Text> приветственных бонусов
+                        <Text color="additional">400</Text> приветственных бонусов
                     </span>
-                    <span>
-                        кэшбэк <Text>3</Text>%, <Text>6</Text>% и <Text>9</Text>%
+                        <span>
+                        кэшбэк <Text color="additional">3</Text>%, <Text color="additional">6</Text>% и <Text
+                            color="additional">9</Text>%
                     </span>
-                    <span>
-                        <Text>1</Text> бонус = <Text>1</Text> рубль
+                        <span>
+                        <Text color="additional">1</Text> бонус = <Text color="additional">1</Text> рубль
                     </span>
-                </div>
-                <div className={styles.btnBonusWrapper}>
-                    <Button className={styles.btn} onClick={() => redirectToLink(links.referral)}>
-                        получить карту
-                    </Button>
-                </div>
-                <div className={styles.phoneWrapperImg}>
-                    <img width={175} height={350} loading="lazy" className={styles.imgLogo} src={phone}
-                         alt="ЛОГО SUNSKRIT"/>
+                    </div>
+                    <div className={styles.btnBonusWrapper}>
+                        <Button className={styles.btn} onClick={() => redirectToLink(links.referral)}>
+                            получить карту
+                        </Button>
+                    </div>
+                    <div className={styles.phoneWrapperImg}>
+                        <img width={175} height={350} loading="lazy" className={styles.imgLogo} src={phone}
+                             alt="ЛОГО SUNSKRIT"/>
+                    </div>
                 </div>
             </div>
+            <Contacts/>
         </div>
     )
 };
