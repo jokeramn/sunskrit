@@ -1,8 +1,13 @@
+import { FC, RefObject } from "react";
 import styles from "./promotions.module.scss";
 import { Text, Title } from "shared";
 
-export const Promotions = () =>
-    <div className={styles.content}>
+type PromotionsProps = {
+    promotionsRef: RefObject<HTMLDivElement>
+}
+
+export const Promotions: FC<PromotionsProps> = ({promotionsRef}) =>
+    <div className={styles.content} ref={promotionsRef}>
         <Title level={1}>
             Акции
         </Title>

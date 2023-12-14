@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c6b35a-f847-458a-9d54-5969bafaaba3" name="Changes" comment="redesign welcome page and menu">
-      <change afterPath="$PROJECT_DIR$/src/components/promotions/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/promotions/promotions.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/promotions/promotions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/cross/cross-icon.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/cross/cross-icon.tsx" afterDir="false" />
+    <list default="true" id="46c6b35a-f847-458a-9d54-5969bafaaba3" name="Changes" comment="added images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/contacts/contacts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/contacts.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/contacts/contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/contacts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/contacts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/welcome/welcome.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome/welcome.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/promotions/promotions.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/promotions/promotions.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/promotions/promotions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/promotions/promotions.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/welcome/welcome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome/welcome.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/modal/modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/modal/modal.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/modal/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/modal/modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/text/text.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/text/text.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/text/text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/text/text.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables/global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +92,7 @@
       <workItem from="1701865802862" duration="3535000" />
       <workItem from="1701949564400" duration="126000" />
       <workItem from="1702072409324" duration="3046000" />
-      <workItem from="1702550561566" duration="15041000" />
+      <workItem from="1702550561566" duration="16315000" />
     </task>
     <task id="LOCAL-00001" summary="added menu drinks">
       <option name="closed" value="true" />
@@ -189,7 +174,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702122008765</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added promotions block">
+      <option name="closed" value="true" />
+      <created>1702572485408</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702572485408</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added images">
+      <option name="closed" value="true" />
+      <created>1702572514098</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702572514098</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +206,8 @@
     <MESSAGE value="added routing" />
     <MESSAGE value="redesign" />
     <MESSAGE value="redesign welcome page and menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="redesign welcome page and menu" />
+    <MESSAGE value="added promotions block" />
+    <MESSAGE value="added images" />
+    <option name="LAST_COMMIT_MESSAGE" value="added images" />
   </component>
 </project>

@@ -21,11 +21,11 @@ export const Welcome = () => {
 
     const clickHandlerShowModal = () => setShowModal(false);
 
-    const actionsRef = useRef<HTMLDivElement>(null);
+    const promotionsRef = useRef<HTMLDivElement>(null);
 
     const scrollToActions = () => {
-        if (actionsRef.current) {
-            actionsRef.current.scrollIntoView({ behavior: 'smooth' });
+        if (promotionsRef.current) {
+            promotionsRef.current.scrollIntoView({ behavior: 'smooth' });
         }
 
         setShowModal(false);
@@ -77,7 +77,7 @@ export const Welcome = () => {
                              alt="ЛОГО SUNSKRIT"/>
                     </div>
                 </div>
-                <Promotions/>
+                <Promotions promotionsRef={promotionsRef}/>
             </div>
             <Contacts/>
             <Modal isOpen={showModal}>
