@@ -4,17 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c6b35a-f847-458a-9d54-5969bafaaba3" name="Changes" comment="redesign">
-      <change afterPath="$PROJECT_DIR$/src/sections/contacts/contacts.module.scss" afterDir="false" />
+    <list default="true" id="46c6b35a-f847-458a-9d54-5969bafaaba3" name="Changes" comment="redesign welcome page and menu">
+      <change afterPath="$PROJECT_DIR$/src/components/promotions/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/promotions/promotions.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/promotions/promotions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/cross/cross-icon.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/cross/cross-icon.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pdf/menu.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/pdf/menu.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/contacts/contacts.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/contacts/contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/contacts/contacts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/contacts/contacts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/contacts.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/contacts/contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/contacts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/contacts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/welcome/welcome.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome/welcome.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/welcome/welcome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/welcome/welcome.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/modal/modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/modal/modal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/modal/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/modal/modal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/text/text.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/text/text.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/text/text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/text/text.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables/global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,23 +44,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/astonuser/projects/sunskrit/src/icons",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "ts.external.directory.path": "/Users/astonuser/projects/sunskrit/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/astonuser/projects/sunskrit/src/icons&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/astonuser/projects/sunskrit/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/icons" />
@@ -60,6 +69,7 @@
       <recent name="$PROJECT_DIR$/src/pdf" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/shared/data" />
     </key>
   </component>
@@ -96,7 +106,8 @@
       <workItem from="1701865552339" duration="97000" />
       <workItem from="1701865802862" duration="3535000" />
       <workItem from="1701949564400" duration="126000" />
-      <workItem from="1702072409324" duration="2350000" />
+      <workItem from="1702072409324" duration="3046000" />
+      <workItem from="1702550561566" duration="15041000" />
     </task>
     <task id="LOCAL-00001" summary="added menu drinks">
       <option name="closed" value="true" />
@@ -170,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701817273834</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="redesign welcome page and menu">
+      <option name="closed" value="true" />
+      <created>1702122008765</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702122008765</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +204,7 @@
     <MESSAGE value="fixed styles menu" />
     <MESSAGE value="added routing" />
     <MESSAGE value="redesign" />
-    <option name="LAST_COMMIT_MESSAGE" value="redesign" />
+    <MESSAGE value="redesign welcome page and menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="redesign welcome page and menu" />
   </component>
 </project>

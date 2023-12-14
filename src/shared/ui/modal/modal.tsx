@@ -1,19 +1,27 @@
-import { FC, ReactNode } from "react";
+import { FC, ReactNode, useEffect } from "react";
 import styles from './modal.module.css';
 import { createPortal } from "react-dom";
+import cx from "classnames";
 
 export type ModalProps = {
     children: ReactNode;
     isOpen: boolean;
-    handleOpenModal: () => void;
 }
 
-export const Modal: FC<ModalProps> = (({children, isOpen, handleOpenModal}) => {
+export const Modal: FC<ModalProps> = (({children, isOpen}) => {
+
+    useEffect(() => {
+        if (document) {
+            document.body.style.overflow = isOpen ? 'hidden' : 'auto'
+        }
+    }, [isOpen])
+
 
     return (
         createPortal(
-            isOpen &&
-            <div onClick={handleOpenModal} className={styles.container}>
+            <div className={cx(styles.container, {
+                [styles.close]: !isOpen,
+            })}>
                 <div className={styles.content}>
                     {children}
                 </div>

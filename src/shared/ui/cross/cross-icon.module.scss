@@ -1,0 +1,20 @@
+.crossIcon {
+  position: relative;
+
+  .line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    top: 50%;
+    transform-origin: center;
+  }
+
+  .line1 {
+    transform: rotate(45deg);
+  }
+
+  .line2 {
+    transform: rotate(-45deg);
+  }
+}

@@ -5,10 +5,10 @@ body {
   color: var(--color-primary);
   background: var(--bg-color);
   height: 100dvh;
+  font-family: var(--font-family-main);
 }
 
 .app {
-  font-family: var(--font-family-main);
   font-size: var(--font-size-m);
   min-height: 100vh;
   height: 100%;

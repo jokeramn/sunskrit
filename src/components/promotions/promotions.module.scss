@@ -1,0 +1,83 @@
+.content {
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  margin-top: 32px;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.promotionContent {
+  position: relative;
+  border-radius: 18px;
+  padding: 18px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid var(--color-additional);
+    border-radius: 18px;
+    filter: drop-shadow(1px 1px 2px rgba(207, 166, 136, 0.8)) drop-shadow(-1px -1px 2px rgba(207, 166, 136, 0.8));
+  }
+}
+
+.datePrizeInfo {
+  margin: 0 15px;
+  padding: 15px 8px;
+  border: 1px solid var(--color-additional);
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 1.3221px 1.3221px rgba(0, 0, 0, 0.25);
+  background: rgba(217, 217, 217, 0.15);
+  filter: blur(20%);
+}
+
+.prizeText {
+  text-align: center;
+}
+
+.boldText {
+  font-weight: 600;
+}
+
+.prizePlaces {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.conditionTitle {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.conditions {
+  margin-top: 20px;
+  display: flex;
+  white-space: pre-line;
+  font-weight: 500;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkText {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
