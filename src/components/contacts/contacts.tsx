@@ -12,9 +12,9 @@ export const Contacts = () =>
                     {`Санкт-Петербург, \n
                     Проспект Чернышевского 10`}
                 </Text>
-                <a href="tel:+79219352525">
+                <a href="tel:+79219352535">
                     <Text color="secondary">
-                        +7 (921) 935-25-25
+                        +7 (921) 935-25-35
                     </Text>
                 </a>
                 <Text color="secondary">

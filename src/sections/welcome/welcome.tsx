@@ -7,7 +7,6 @@ import { Contacts } from "components/contacts";
 import { Modal } from "shared/ui/modal";
 import gift from 'images/gift.png';
 import { useRef, useState } from "react";
-import { Promotions } from "components/promotions";
 
 export const Welcome = () => {
     const redirectToLink = (link: string) => window.open(link, "_blank");
@@ -77,10 +76,9 @@ export const Welcome = () => {
                              alt="ЛОГО SUNSKRIT"/>
                     </div>
                 </div>
-                <Promotions promotionsRef={promotionsRef}/>
             </div>
             <Contacts/>
-            <Modal isOpen={showModal}>
+            <Modal isOpen={false}>
                 <div className={styles.lotteryContent}>
                     <CrossIcon
                         onClick={clickHandlerShowModal}
