@@ -1,0 +1,117 @@
+.root {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.wrapperImg {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapperImg > img {
+    display: block;
+}
+
+.btn {
+    width: 100%;
+}
+
+.bonusWrapper {
+    margin-top: 115px;
+    position: relative;
+}
+
+.bonusTextInfo {
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+    max-width: 210px;
+    align-items: flex-start;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btnBonusWrapper {
+    margin: 140px 0 112px;
+}
+
+.phoneWrapperImg {
+    position: absolute;
+    bottom: 220px;
+    right: -35%;
+
+    & > img {
+        display: block;
+    }
+}
+
+.lotteryContent {
+    position: relative;
+
+    .cross {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+    }
+}
+
+.giftImgWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > img {
+        display: block;
+    }
+}
+
+.giftContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.giftTextInfo {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.dateInfo {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.lotteryInfo {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.bonusInfo {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.giftBtnWrapper {
+    display: flex;
+    width: 170px;
+
+    & > .giftBtn {
+        background: linear-gradient(180deg, rgba(213, 116, 62, 0.93) 57.91%, rgba(255, 156, 100, 0.71) 100%);
+        box-shadow: 0 4px 8.8px rgba(0, 0, 0, 0.25);
+        color: var(--color-black);
+        text-transform: none;
+        font-weight: 700;
+        border: none;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+}

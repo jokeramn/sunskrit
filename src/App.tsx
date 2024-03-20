@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import "./styles/index.scss";
-import { Welcome } from "sections/welcome";
-import { Menu } from "sections/menu";
+import { Welcome } from "pages/welcome";
+import { Menu } from "pages/menu";
 import { useEffect } from "react";
 
 function App() {

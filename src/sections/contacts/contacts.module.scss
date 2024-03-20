@@ -1,0 +1,18 @@
+.container {
+    height: 100dvh;
+    width: 100dvw;
+    padding: 0 30px;
+}
+
+.title {
+    margin-top: 55px;
+}
+
+.contactsInfoWrapper {
+    margin-top: 44px;
+    min-height: 110px;
+    max-width: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

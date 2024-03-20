@@ -1,0 +1,43 @@
+.header {
+  background: #06060680;
+  padding: 65px 30px 10px 30px;
+  backdrop-filter: blur(3px);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgWrapper > img {
+  display: block;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.line {
+  display: inline-block;
+  height: 3px;
+  background: #fff;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.line1 {
+  width: 45px;
+}
+
+.line2 {
+  width: 36px;
+}
+
+.line3 {
+  width: 27px;
+}
