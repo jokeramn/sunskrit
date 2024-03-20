@@ -1,5 +1,6 @@
 .text {
   white-space: pre-line;
+  display: inline-block;
 }
 
 .primary {
@@ -16,4 +17,8 @@
 
 .black {
   color: var(--color-black);
+}
+
+.footer {
+  color: var(--color-footer);
 }

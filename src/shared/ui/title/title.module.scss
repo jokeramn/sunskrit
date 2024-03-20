@@ -1,4 +1,14 @@
 .title {
   text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.primary {
   color: var(--color-additional);
+}
+
+.secondary {
+  color: var(--color-primary)
 }
