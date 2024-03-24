@@ -1,0 +1,94 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1; /* Устанавливаем поверх других элементов */
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.imgWrapper {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+
+  & > img {
+    display: block;
+  }
+}
+
+.textBlock {
+  max-width: 170px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.arrow {
+  & > img {
+    display: block;
+  }
+
+  transform: rotate(0deg);
+  transition: transform 0.3s linear;
+
+  &.isActive {
+    transform: rotate(-180deg);
+    transition: transform 0.3s linear;
+  }
+}
+
+.collapse {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  text-align: center;
+  padding: 0 25px;
+  font-size: 12px;
+  color: var(--color-secondary);
+  -webkit-transition: height 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+
+  &.open {
+    opacity: 1;
+    margin-bottom: 10px;
+    transform: translateY(0);
+    height: auto; /* Используйте height вместо max-height */
+    -webkit-transition: height 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
+    transition: height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+  }
+}
+
+@keyframes visible {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hidden {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+

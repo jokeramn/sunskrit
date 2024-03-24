@@ -1,6 +1,6 @@
 .container {
   width: 100dvw;
-  height: 100dvh;
+  height: 100%;
   padding: 0 30px;
   display: flex;
   flex-direction: column;
@@ -13,27 +13,21 @@
 }
 
 .imgWrapper {
+  margin-top: 45px;
   position: relative;
 
   & > img {
     display: block;
   }
+}
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 20%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    filter: blur(100px);
-    z-index: -10;
-    border-radius: 50%;
-  }
+.bonusBlock {
+  width: 100%;
+  padding: 0 20px;
 }
 
 .btnBonusWrapper {
   width: calc(100% - 20px);
   margin-bottom: 65px;
 }
+

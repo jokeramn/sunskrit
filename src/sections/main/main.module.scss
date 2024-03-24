@@ -1,15 +1,26 @@
 .container {
+  position: relative;
   display: flex;
-  height: 100dvh;
+  height: 100%;
   width: 100dvw;
   padding: 0 30px;
   flex-direction: column;
-  background-image: url("../../images/bg_main.png");
-  background-color: rgba(0, 0, 0, 0.25);
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
+
+  &:before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    display: block;
+    background-image: url("../../images/bg_main.jpg");
+    opacity: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
 }
 
 .wrapper {
@@ -43,7 +54,7 @@
 }
 
 .workInfo {
-  margin-top: auto;
+  margin-top: 50%;
   margin-bottom: 52px;
   position: relative;
   display: flex;
@@ -56,8 +67,8 @@
   height: 50px;
 }
 
-@media screen and (max-height: 700px)  {
-  .wrapper  {
-    margin-top: 60%;
-  }
-}
+//@media screen and (max-height: 700px)  {
+//  .wrapper  {
+//    margin-top: 60%;
+//  }
+//}
