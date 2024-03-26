@@ -48,47 +48,19 @@
 }
 
 .collapse {
-  height: 0;
   overflow: hidden;
   opacity: 0;
   text-align: center;
   padding: 0 25px;
   font-size: 12px;
   color: var(--color-secondary);
-  -webkit-transition: height 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
-  transition: height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+  max-height: 0;
+  margin-bottom: 10px;
+  transition: max-height 0.1s ease, opacity 0.2s ease;
 
   &.open {
     opacity: 1;
-    margin-bottom: 10px;
-    transform: translateY(0);
-    height: auto; /* Используйте height вместо max-height */
-    -webkit-transition: height 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
-    transition: height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    max-height: 200px;
+    transition: max-height 0.1s ease, opacity 0.2s ease;
   }
 }
-
-@keyframes visible {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes hidden {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-}
-

@@ -1,6 +1,6 @@
 import styles from './header.module.scss';
 import cx from 'classnames';
-import logo from 'images/logo.png';
+import logo from 'icons/logo.svg';
 export const Header = () => {
 
     return (

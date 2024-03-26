@@ -10,7 +10,7 @@ export type AccordionProps = {
 export const Accordion = () => {
     const [accordion, setAccordion] = useState<Omit<AccordionDataType, 'handleClick'>[]>(accordionData);
 
-    const handleClick =(id: number) => {
+    const handleClick = (id: number) => {
         setAccordion((prevState) => {
             return prevState.map((item) => {
                 if (item.id === id) {

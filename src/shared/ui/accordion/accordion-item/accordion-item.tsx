@@ -15,7 +15,7 @@ export const AccordionItem: FC<AccordionDataType> = memo((props) => {
     } = props;
 
     return (
-        <div className={styles.section}>
+        <div className={styles.section} onClick={() => handleClick(id)}>
             <div className={styles.block}>
                 <div className={styles.imgWrapper}>
                     <img height={25} width={25} src={img.src} alt={img.alt}/>
@@ -23,12 +23,11 @@ export const AccordionItem: FC<AccordionDataType> = memo((props) => {
                 <div className={styles.textBlock}>
                     {textContent}
                 </div>
-                <button onClick={() => handleClick(id)}
-                        type="button"
-                        className={cx(styles.arrow, {[styles.isActive]: isActive})}
+                <div
+                    className={cx(styles.arrow, {[styles.isActive]: isActive})}
                 >
                     <img src={icon.src} alt={icon.alt}/>
-                </button>
+                </div>
             </div>
             <div className={cx(styles.collapse, {
                 [styles.open]: isActive
