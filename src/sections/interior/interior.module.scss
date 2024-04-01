@@ -1,0 +1,23 @@
+.container {
+  width: 100dvw;
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-color);
+}
+
+.title {
+  margin-top: 65px;
+}
+
+.text {
+  margin-top: 12px;
+  padding: 0 22px;
+  text-align: center;
+}
+
+.button {
+  margin: 65px 0 65px;
+}
