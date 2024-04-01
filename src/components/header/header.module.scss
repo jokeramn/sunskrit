@@ -1,11 +1,11 @@
 .header {
   background: #06060680;
-  padding: 65px 30px 10px 30px;
+  padding: 20px 30px;
   backdrop-filter: blur(3px);
   position: fixed;
   width: 100%;
   z-index: 100;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
 }
@@ -26,7 +26,7 @@
 
 .line {
   display: inline-block;
-  height: 3px;
+  height: 2px;
   background: #fff;
 
   &:not(:last-child) {

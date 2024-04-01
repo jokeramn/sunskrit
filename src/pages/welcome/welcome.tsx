@@ -3,6 +3,7 @@ import { Contacts } from "sections/contacts";
 import { Main } from "sections/main";
 import { Header } from "components/header";
 import { Bonus } from "sections/bonus";
+import { Interior } from "sections/interior";
 
 export const Welcome = () => {
 
@@ -11,9 +12,7 @@ export const Welcome = () => {
             <Header/>
             <Main/>
             <Bonus/>
-            {/*<div className={styles.bonusWrapper}>*/}
-
-            {/*</div>*/}
+            <Interior/>
             <Contacts/>
         </div>
     )
