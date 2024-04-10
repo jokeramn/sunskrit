@@ -1,18 +1,19 @@
 import { Button, Text, Title } from "shared/ui";
 import styles from './main.module.scss';
 import { useNavigate } from "react-router-dom";
+import { ForwardedRef, forwardRef } from "react";
 
-export const Main = () => {
+export const Main = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
     const navigate = useNavigate();
 
     return (
-        <section className={styles.container}>
+        <section ref={ref} className={styles.container}>
             <div className={styles.wrapper}>
                 <Title color="secondary" level={1} className={styles.title}>
                     Sunskrit Lounge
                 </Title>
                 <Text color="secondary" className={styles.text}>
-                    Добро пожаловать в уютный лаунж  с PS5 и настольными играми
+                    Добро пожаловать в уютный лаунж с PS5 и настольными играми
                 </Text>
                 <div className={styles.btnWrapper}>
                     <Button className={styles.btn} onClick={() => navigate("/menu")}>
@@ -35,4 +36,4 @@ export const Main = () => {
             </div>
         </section>
     )
-}
+})

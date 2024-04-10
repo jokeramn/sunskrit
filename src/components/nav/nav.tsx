@@ -1,6 +1,6 @@
 import styles from "./nav.module.scss";
 import cx from 'classnames';
-import { FC } from "react";
+import { FC, RefObject } from "react";
 import { NavItemData } from "components/menu/data";
 import { Links, Text } from "shared/ui";
 import { LinkDataType } from "shared/model/types";
@@ -10,8 +10,15 @@ type NavProps = {
     setActive: () => void;
     items: NavItemData[];
     links: LinkDataType[];
+    scrollToSection: (ref: RefObject<HTMLDivElement>) => void;
+    sectionRefs: RefObject<HTMLDivElement>[];
 }
-export const Nav: FC<NavProps> = ({isActive, setActive, items, links}) => {
+export const Nav: FC<NavProps> = ({isActive, setActive, items, links, scrollToSection, sectionRefs}) => {
+
+    const handleItemClick = (index: number) => {
+        scrollToSection(sectionRefs[index]);
+        setActive(); // Закрыть меню после перехода к секции
+    };
 
     return (
         <div className={cx(styles.container, {
@@ -21,12 +28,12 @@ export const Nav: FC<NavProps> = ({isActive, setActive, items, links}) => {
             <nav>
                 <ul className={styles.itemsContent}>
                     {
-                        items.map((item =>
-                            <li key={item.key} className={styles.item}>
+                        items.map((item, index) =>
+                            <li key={item.key} className={styles.item} onClick={() => handleItemClick(index)}>
                                 <Text color="secondary" className={styles.text}>
                                     {item.name}
                                 </Text>
-                            </li>))
+                            </li>)
                     }
                 </ul>
             </nav>

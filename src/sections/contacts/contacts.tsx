@@ -6,12 +6,13 @@ import { PhoneIcon } from "components/icons/phone";
 import { LocationIcon } from "components/icons/location";
 import { TimeIcon } from "components/icons/time";
 import { links } from "shared/model/data";
+import { ForwardedRef, forwardRef } from "react";
 
 
-export const Contacts = () => {
+export const Contacts = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
 
     return (
-        <section className={styles.container}>
+        <section ref={ref} className={styles.container}>
             <Title color="primary" level={1} className={styles.title}>
                 контакты
             </Title>
@@ -67,5 +68,5 @@ export const Contacts = () => {
             <MapYandex/>
         </section>
     )
-}
+})
 

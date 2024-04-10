@@ -1,13 +1,14 @@
 import styles from './interior.module.scss';
 import { Button, Text, Title } from "shared/ui";
 import { Slider } from "components/slider/slider";
+import { ForwardedRef, forwardRef } from "react";
 
 
-export const Interior = () => {
+export const Interior = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
     const handlerClick = () => window.open("https://t.me/SunskritReserv");
 
     return (
-        <section className={styles.container}>
+        <section ref={ref} className={styles.container}>
             <Title color="primary" level={1} className={styles.title}>
                 интерьер
             </Title>
@@ -20,4 +21,4 @@ export const Interior = () => {
             <Button onClick={handlerClick} className={styles.button}>забронировать стол</Button>
         </section>
     )
-}
+})

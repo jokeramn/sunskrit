@@ -2,8 +2,9 @@ import styles from "./bonus.module.scss";
 import { Button, ImageWithPreload, Title } from "shared/ui";
 import phone from 'images/phone.png';
 import { Accordion } from "shared/ui/accordion/accordion";
+import { ForwardedRef, forwardRef } from "react";
 
-export const Bonus = () => {
+export const Bonus = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
 
     const redirectToLink = (link: string) => window.open(link, "_blank");
 
@@ -12,7 +13,7 @@ export const Bonus = () => {
     }
 
     return (
-        <section className={styles.container}>
+        <section ref={ref} className={styles.container}>
             <Title level={1} color="primary" className={styles.title}>
                 Бонусная карта
             </Title>
@@ -27,4 +28,4 @@ export const Bonus = () => {
             </div>
         </section>
     )
-}
+})
