@@ -1,4 +1,4 @@
-import { AccordionDataType } from "shared/model";
+import { AccordionDataType } from "shared/model/types";
 import gift from "icons/gift.svg";
 import chevronDown from "icons/chevron-down.svg";
 import { Fragment } from "react";

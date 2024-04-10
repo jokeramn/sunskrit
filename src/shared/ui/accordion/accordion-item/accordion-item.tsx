@@ -1,7 +1,7 @@
 import { FC, memo } from "react";
 import styles from "./accordion-item.module.scss";
 import cx from "classnames";
-import { AccordionDataType } from "shared/model";
+import { AccordionDataType } from "shared/model/types";
 
 export const AccordionItem: FC<AccordionDataType> = memo((props) => {
     const {

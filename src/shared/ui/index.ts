@@ -4,6 +4,7 @@ import { Button } from "shared/ui/button/button";
 import { CrossIcon } from "shared/ui/cross/cross-icon";
 import { Modal } from "shared/ui/modal/modal";
 import { ImageWithPreload } from "shared/ui/image/image-wtih-preload";
+import { Links} from "shared/ui/links/links";
 
 export {
     Title,
@@ -11,5 +12,6 @@ export {
     Button,
     CrossIcon,
     Modal,
-    ImageWithPreload
+    ImageWithPreload,
+    Links,
 }

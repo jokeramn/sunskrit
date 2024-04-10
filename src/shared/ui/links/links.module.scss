@@ -1,0 +1,15 @@
+.linksContent {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  & > a  {
+    display: block;
+    opacity: 0.5;
+  }
+}

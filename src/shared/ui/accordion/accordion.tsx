@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from './accordion.module.scss';
-import { AccordionDataType } from "shared/model";
+import { AccordionDataType } from "shared/model/types";
 import { AccordionItem } from "./accordion-item";
 import { accordionData } from "./model";
 
