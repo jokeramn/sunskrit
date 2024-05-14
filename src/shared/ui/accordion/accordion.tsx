@@ -13,13 +13,14 @@ export const Accordion = () => {
     const handleClick = (id: number) => {
         setAccordion((prevState) => {
             return prevState.map((item) => {
-                if (item.id === id) {
+                if (item.id === id || (item.id !== id && item.isActive)) {
                     return {
                         ...item,
                         isActive: !item.isActive
                     };
                 }
-                return item;
+
+                return item
             });
         });
     }

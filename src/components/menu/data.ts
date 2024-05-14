@@ -1,6 +1,3 @@
-import tg from '../../icons/tg.svg';
-import insta from '../../icons/insta.svg';
-
 export type NavItemData = {
     name: string;
     key: number;

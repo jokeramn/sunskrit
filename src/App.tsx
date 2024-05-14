@@ -3,6 +3,7 @@ import "./styles/index.scss";
 import { Welcome } from "pages/welcome";
 import { Menu } from "pages/menu";
 import { useEffect } from "react";
+import { GeneralMenu } from "pages/general-menu";
 
 function App() {
     const {pathname} = useLocation();
